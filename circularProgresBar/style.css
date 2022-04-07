@@ -29,7 +29,7 @@ section::before{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.container .card{
+.container .card{ 
     position: relative;
     width: 250px;
     height: 300px;
@@ -92,7 +92,7 @@ section::before{
     font-weight: 800; 
     font-size: 18px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: uppercase;  
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     z-index: 1;
     pointer-events: none;
@@ -105,8 +105,7 @@ section::before{
     bottom: -50px;
     z-index: 11;
     transform: translate(-50%) translateY(-50%);
-    padding: 10px 20px 10px;
-
+    padding: 15px 20px 10px;
 }
 .card:nth-child(1) .text{
     background: #ff0461;
@@ -114,7 +113,7 @@ section::before{
 .card:nth-child(2) .text{
     background: #2bd2ff;
 }
-.card:nth-child(1) .text{
+.card:nth-child(3) .text{
     background: #18d539;
 }
 svg{
@@ -127,7 +126,7 @@ svg circle{
     width: 100%;
     height: 100%;
     fill: none;
-    stroke-width: 10;
+    stroke-width: 10;   
     stroke: rgba(255, 255, 255, 0.05);
     transform: translate(5px,5px);
     stroke-linecap: round;
@@ -138,11 +137,11 @@ svg circle:nth-child(2){
     stroke-dashoffset: 80px;
 }
 .card:nth-child(1) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440px- (440px*90)/100);
+    stroke-dashoffset: calc(440px - (440px * 90)/100);
 }
 .card:nth-child(2) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440px- (440px*82)/100);
+    stroke-dashoffset: calc(440px - (440px * 82)/100);
 }
 .card:nth-child(3) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440px- (440px*65)/100);
+    stroke-dashoffset: calc(440px - (440px * 65)/100);
 }
